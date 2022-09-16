@@ -1,0 +1,231 @@
+/*----------------------------------------
+    16. Portfolio CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+
+.portfolio-menu {
+	text-align: center;
+    button{
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0 35px;
+        height: 60px;
+        color: var(--clr-common-heading);
+        border: none;
+        background: none;
+        margin: 6px 2px;
+        font-family: $oswald;
+        clip-path: polygon(15px 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+        text-transform: uppercase;
+        @media #{$md, $sm, $xs} {
+            font-size: 14px;
+            padding: 0 20px;
+            height: 50px;
+            margin: 5px auto;
+        }
+        &.active, &:hover{
+            background: var(--clr-theme-1);
+            color: var(--clr-common-white);
+            
+        }
+
+    }
+}
+
+.portfolio__item{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__content {
+	background: var(--clr-common-white);
+	position: absolute;
+	left: -100px;
+	bottom: 0px;
+	padding: 43px 45px 43px;
+	width: calc(100% - 15px);
+	opacity: 0;
+	visibility: hidden;
+    @include transition(0.3s);
+	@include transform(scale(0.7));
+    clip-path: polygon(0% 0, 100% 0, 97% 100%, 0 100%);
+
+    @media #{$xl} {
+        clip-path: polygon(0% 0, 100% 0, 96% 100%, 0 100%);
+    }
+    @media #{$xxs} { 
+        padding: 20px 13px 50px 19px;        
+    }
+    &-thumb {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: -1;
+        width: 125px;
+    }
+    &-title {
+        position: relative;
+        z-index: 2;
+        h5 {
+            font-size: 16px;
+            color: var(--clr-common-color-red);
+            line-height: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        h2 {
+            font-size: 24px;
+            line-height: 34px;
+            color: var(--clr-common-heading);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 14px;
+            @media #{$xl, $lg, $md, $sm, $xs} {
+                font-size: 20px;
+            }
+        }
+    }
+    &-data {
+        position: relative;
+        z-index: 2;
+        span{
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: var(--clr-common-heading);
+            }
+            i {
+                color: var(--clr-common-color-red);
+                font-size: 14px;
+                margin-right: 5px;
+            }
+            &:first-child {
+                margin-right: 10px;
+            }
+            &:hover{
+                a{
+                    color: var(--clr-common-color-red);
+                }
+            }
+        }
+    }
+}
+.portfolio__img{
+	clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    img{
+        clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+        width: 100%;
+    }
+}
+.portfolio__item:hover .portfolio__content {
+	opacity: 1;
+	visibility: visible;
+	left: 0px;
+    @include transform(scale(1));
+}
+
+
+
+// Portfolio Details CSS 
+
+.portfolio__details-img, .service-details-content{
+    img{
+        clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    }
+}
+
+
+.overview-list{
+    ul {
+        li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 5px;
+            &::before {
+                position: absolute;
+                content: "\f00c";
+                font-size: 16px;
+                color: var(--clr-common-heading);
+                font-family: $fontawesome;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}
+
+.row.portfolio__sd-box {
+	@media #{$lg}{
+        --bs-gutter-x: 18px;
+    }
+}
+.portfolio__sd-box {
+    &-content{
+        padding: 25px 20px;
+	    position: relative;
+        display: inline-grid;
+        width: 100%;
+        &::before{
+            content: '';
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--clr-common-border-2);
+            transform: skew(-4deg);
+            z-index: -1;
+        }
+        i {
+            margin-bottom: 25px;
+            display: block;
+            color: var(--clr-common-color-red);
+            font-size: 45px;
+        }
+        p {
+            margin-bottom: 0;
+            line-height: 20px;
+        }
+        h6 {
+            font-size: 22px;
+            @media #{$xl, $lg, $sm, $sm, $xs} {
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+
+
+//   Portfolio Slider CSS 
+.portfolio-slider {
+    img{
+        width: 100%;
+    }
+}
+.portfolio-slider-pagination{
+    text-align: center;
+    .swiper-pagination-bullet {
+        width: 30px;
+        height: 4px;
+        display: inline-block;
+        background: var(--clr-common-color-3);
+        margin: 0 3px;
+        opacity: 1;
+        @include border-radius(0px);
+        &-active{
+            background: var(--clr-theme-1);
+        }
+    }
+
+}
+
+.portfolio-form{
+    h4{
+        margin-bottom: 25px;
+    }
+}
+
