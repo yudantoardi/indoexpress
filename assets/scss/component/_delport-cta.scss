@@ -26,7 +26,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             padding-bottom: 15px;
-            clip-path: polygon(1.5% 0%, 100% 0%, 98.5% 100%, 0% 100%);
+            //clip-path: polygon(1.5% 0%, 100% 0%, 98.5% 100%, 0% 100%);
         }
         &-overlay::before{
             position: absolute;
