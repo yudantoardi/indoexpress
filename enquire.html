@@ -214,31 +214,37 @@
       </div>
    </div>
    <!-- Sticky Menu Area End Here  -->
-   <!-- Add your site or application content here -->
    <main>
       <!-- Sidebar Area Start Here  -->
       <div class="sidebar__area">
          <div class="sidebar__wrapper">
             <div class="sidebar__close">
                <button class="sidebar__close-btn" id="sidebar__close-btn">
-               <i class="fal fa-times"></i>
+                  <i class="fal fa-times"></i>
                </button>
             </div>
             <div class="sidebar__content">
                <div class="sidebar__logo mb-40">
                   <a href="index.html">
-                  <img src="assets/images/logo.png" alt="logo.png">
+                     <img src="assets/images/logo.png" alt="logo.png">
                   </a>
                </div>
                <div class="sidebar__search mb-25">
                   <form action="#">
-                  <div class="single-input-field">
-                      <input name="name" type="text" placeholder="Search Here">
-                      <i class="fas fa-search"></i>
-                  </div>
+                     <div class="single-input-field">
+                        <input name="name" type="text" placeholder="Search Here">
+                        <i class="fas fa-search"></i>
+                     </div>
                   </form>
-              </div>
+               </div>
                <div class="mobile-menu fix mb-10 mean-container">
+               </div>
+               <div class="sidebar__text d-none d-lg-block">
+                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                     born
+                     and will give you a complete account of the system and expound the actual teachings of the great
+                     explore
+                  </p>
                </div>
                <div class="sidebar__contact mt-30 mb-30">
                   <div class="sidebar__info fix">
@@ -257,7 +263,7 @@
                         </div>
                         <div class="sidebar__info-text">
                            <span>Email now</span>
-                           <h5><a href="mailto:info@webdow.com">info@indoexpress.com</a></h5>
+                           <h5><a href="mailto:info@webdow.com">info@webdow.com</a></h5>
                         </div>
                      </div>
                      <div class="sidebar__info-item">
@@ -265,8 +271,8 @@
                            <i class="flaticon-pin"></i>
                         </div>
                         <div class="sidebar__info-text">
-                           <span>Jl. Petamburan No.12A</span>
-                           <h5>Jakarta, Indonesia</h5>
+                           <span>12/A, New Boston Hall</span>
+                           <h5>New york, united states</h5>
                         </div>
                      </div>
                   </div>
@@ -290,12 +296,12 @@
             <div class="row justify-content-center">
                <div class="col-xxl-9">
                   <div class="page-title-wrapper text-center">
-                     <h3 class="page-title mb-25">Export</h3>
+                     <h3 class="page-title mb-25">Enquire</h3>
                      <div class="breadcrumb-menu">
                         <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                            <ul class="trail-items">
                               <li class="trail-item trail-begin"><a href="index.html"><span>Home</span></a></li>
-                              <li class="trail-item trail-end"><span>Export</span></li>
+                              <li class="trail-item trail-end"><span>Enquire</span></li>
                            </ul>
                         </nav>
                      </div>
@@ -305,82 +311,60 @@
          </div>
       </section>
       <!-- page title area end -->
-      <!-- service details area start -->
-      <div class="services__details pt-120 pb-60">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-8 col-lg-8">
-                  <div class="services__details-wrapper mb-60">
-                     <div class="services__details-img mb-35 m-img">
-                        <img src="assets/images/services-details-img.jpg" alt="services">
-                     </div>
-                     <div class="service__details-content mb-25">
-                        <div class="section__title mb-20">
-                           <h3 class="title-sm">Hilix Company Air Frieght Overview.</h3>
+      <!-- Accordion And Testimonial Area Start Here  -->
+      <section class="testi pt-120 pb-100">
+        <div class="container">
+           <div class="row justify-content-center">
+              <div class="col-xl-8">
+                <div class="contact-form mb-60">
+                    <form action="mail.php" id="contact-form" method="POST">
+                        <div class="row">
+                           <div class="col-xxl-6 col-xl-6 col-lg-6">
+                              <div class="single-input-field">
+                                 <input name="name" type="text" placeholder="Name or Company">
+                                 <i class="fas fa-user"></i>
+                              </div>
+                           </div>
+                           <div class="col-xxl-6 col-xl-6 col-lg-6">
+                              <div class="single-input-field">
+                                 <input name="email" type="email" placeholder="Requester's Email">
+                                 <i class="fas fa-envelope"></i>
+                              </div>
+                           </div>
+                           <div class="col-xxl-6 col-xl-6 col-lg-6">
+                              <div class="single-input-field">
+                                 <input name="phone" type="text" placeholder="Contact Number">
+                                 <i class="fas fa-phone-alt"></i>
+                              </div>
+                           </div>
+                           <div class="col-xxl-6 col-xl-6 col-lg-6">
+                              <div class="single-input-field select">
+                                 <select name="subject">
+                                    <option selected>Jenis Permintaan</option>
+                                    <option value="subject one">Subject One</option>
+                                    <option value="subject two">Subject Two</option>
+                                    <option value="subject three">Subject Three</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="col-xxl-12 col-xl-12 col-lg-12">
+                              <div class="single-input-field textarea">
+                                 <textarea rows="10" cols="10" placeholder="Detail Permintaan" name="massage"></textarea>
+                                 <i class="fas fa-edit"></i>
+                              </div>
+                           </div>
+                           <div class="col-xxl-12 col-xl-12 text-center">
+                              <button type="submit" class="fill-btn clip-btn">Kirim Pertanyaan</button>
+                           </div>
                         </div>
-                        <p class="content-para">These are inbound logistics, outbound logistics, and reverse logistics.
-                           The information
-                           about
-                           these three
-                           supply chain directions is essential to know, especially to people inclined in the
-                           logistics
-                           industry.
-                        </p>
-                        <p class="mb-25">Logistics is the overseeing of both the inward and outward flow of goods from
-                           the
-                           manufacturing point
-                           to the end user or point of use. The movement of these goods is known as transportation.
-                           While some
-                           use these terms interchangeably, they are two very unique aspects of the supply chain.
-                           Here’s what you
-                           need to know about logistics vs. transportation.
-                        </p>
-
-                        <div class="section__title mb-20">
-                           <h3 class="title-sm">Hilix Company Air Frieght Overview.</h3>
-                        </div>
-                        <p class="content-para">These are inbound logistics, outbound logistics, and reverse logistics.
-                           The information
-                           about
-                           these three
-                           supply chain directions is essential to know, especially to people inclined in the
-                           logistics
-                           industry.
-                        </p>
-                        <p class="mb-25">Logistics is the overseeing of both the inward and outward flow of goods from
-                           the
-                           manufacturing point
-                           to the end user or point of use. The movement of these goods is known as transportation.
-                           While some
-                           use these terms interchangeably, they are two very unique aspects of the supply chain.
-                           Here’s what you
-                           need to know about logistics vs. transportation.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4">
-                  <div class="service-details-sidebar mb-60">
-                     <div class="sidebar__widget mb-40">
-                        <div class="sidebar-title mb-25">
-                           <h4>Our Services</h4>
-                        </div>
-                        <ul class="widget-services">
-                           <li><a href="#"><i class="fas fa-plane"></i> Export</a></li>
-                           <li><a href="#"><i class="fas fa-ship"></i> Import</a></li>
-                           <li><a href="#"><i class="fas fa-box"></i> Domestic</a></li>
-                           <li><a href="#"><i class="fas fa-truck"></i> Dedicated Truck Services</a></li>
-                           <li><a href="#"><i class="fas fa-file"></i> Custom Clearance & PPJK</a></li>
-                           <li><a href="#"><i class="fas fa-home"></i> Warehousing</a></li>
-                           <li><a href="#"><i class="fas fa-ship"></i> Project Cargo, Shipping Chartered & Brokerage</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- service details area end -->
+                     </form>
+                     <p class="ajax-response"></p>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- Accordion And Testimonial Area End Here  -->
    </main>
    <!-- footer area start  -->
    <footer>
