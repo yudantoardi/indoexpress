@@ -50,3 +50,7 @@
 .about__3-img-wrapper{
     padding-top: 0;
 }
+
+.sidebar__logo img{
+    width: 50%;
+}
