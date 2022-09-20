@@ -54,3 +54,71 @@
 .sidebar__logo img{
     width: 50%;
 }
+
+.user-box{
+    display: inline-block;
+    text-transform: none;
+    cursor: pointer;
+}
+.user-box .avatar{
+    width: 30px;
+    height: 30px;
+    float: right;
+    padding-top: 4px;
+}
+.user-box .avatar figure{
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.user-box .avatar figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.user-box h5{
+    display: inline-block;
+    width: 120px;
+    float: right;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    padding: 10px 30px 10px 10px;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    text-transform: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.user-box h5 a{
+    width: 100%;
+    float: left;
+}
+.user-box h5 a:hover{
+    color: #fff;
+}
+
+.single-input-field input[type="file"]{
+    padding-top: 15px;
+}
+
+.sidebar__content .user-box{
+    margin-bottom: 20px;
+}
+.sidebar__content .user-box h5{
+    color: #555;
+    padding-top: 11px;
+    font-size: 14px;
+}
+.sidebar__content .user-box h5 a:hover{
+    color: #555;
+}
