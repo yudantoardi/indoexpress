@@ -122,3 +122,9 @@
 .sidebar__content .user-box h5 a:hover{
     color: #555;
 }
+
+.profile-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
