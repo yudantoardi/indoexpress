@@ -184,3 +184,6 @@
 .main-menu ul li{
     margin-right: 30px;
 }
+.services-two .services__item:hover h4{
+    color: #fff;
+}
